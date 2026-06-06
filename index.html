@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chic and Calm | Asesoría de Imagen Personal y Corporativa en Chile — Camila Díaz</title>
+  <meta name="description" content="Asesoría de imagen personal y corporativa en Chile. Colorimetría, imagen ejecutiva, marca personal, personal shopper y capacitación para empresas. +20 años de experiencia. Camila Díaz, Relacionadora Pública.">
+  <meta name="keywords" content="asesoría de imagen Chile, asesoría de imagen personal Santiago, imagen ejecutiva Chile, colorimetría Chile, personal shopper Chile, marca personal Chile, imagen corporativa empresas Chile">
+  <meta name="author" content="Camila Díaz — Chic and Calm">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.chicandcalm.cl/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chic and Calm | Asesoría de Imagen Personal y Corporativa en Chile">
+  <meta property="og:description" content="Diseñamos una imagen coherente con tu identidad, tus objetivos y el contexto en que quieres destacar. +20 años de experiencia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.chicandcalm.cl/">
+  <meta property="og:locale" content="es_CL">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chic and Calm | Asesoría de Imagen Chile">
+  <meta name="twitter:description" content="Asesoría de imagen personal y corporativa en Chile. Camila Díaz, Relacionadora Pública con +20 años de experiencia.">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Chic and Calm",
+    "description": "Asesoría de imagen personal y corporativa en Chile. Colorimetría, imagen ejecutiva, marca personal, personal shopper y capacitación para empresas.",
+    "url": "https://www.chicandcalm.cl",
+    "telephone": "+56-9-XXXXXXXX",
+    "areaServed": "Chile",
+    "founder": {
+      "@type": "Person",
+      "name": "Camila Díaz",
+      "jobTitle": "Asesora de Imagen y Relacionadora Pública"
+    },
+    "sameAs": ["https://www.linkedin.com/in/camiladiaz", "https://www.instagram.com/chicandcalm"],
+    "serviceType": ["Asesoría de imagen personal", "Asesoría de imagen corporativa", "Colorimetría", "Personal shopper", "Imagen ejecutiva", "Marca personal"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #F7F3EE;
+      --cream-dark: #EDE7DD;
+      --sand: #D4C5B0;
+      --bronze: #A0855A;
+      --bronze-dark: #7A6240;
+      --ink: #1C1814;
+      --ink-soft: #3D3530;
+      --muted: #7A6E65;
+      --white: #FDFBF8;
+      --accent: #C9A87A;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Jost', sans-serif;
+      --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.7;
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* ───── CURSOR ───── */
+    body { cursor: none; }
+    .cursor {
+      width: 10px; height: 10px;
+      background: var(--bronze);
+      border-radius: 50%;
+      position: fixed; top: 0; left: 0;
+      pointer-events: none; z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s, width 0.3s, height 0.3s, background 0.3s;
+    }
+    .cursor-ring {
+      width: 36px; height: 36px;
+      border: 1px solid var(--bronze);
+      border-radius: 50%;
+      position: fixed; top: 0; left: 0;
+      pointer-events: none; z-index: 9998;
+      transform: translate(-50%, -50%);
+      transition: transform 0.15s, width 0.3s, height 0.3s, opacity 0.3s;
+      opacity: 0.6;
+    }
+    a, button, input, textarea, label { cursor: none; }
+
+    /* ───── NAV ───── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw;
+      height: 72px;
+      background: rgba(247, 243, 238, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(160, 133, 90, 0.15);
+      transition: background var(--transition), box-shadow var(--transition);
+    }
+    nav.scrolled {
+      background: rgba(247, 243, 238, 0.98);
+      box-shadow: 0 1px 24px rgba(28, 24, 20, 0.08);
+    }
+    .logo {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      text-decoration: none;
+      line-height: 1;
+    }
+    .logo span { color: var(--bronze); }
+
+    .nav-links { display: flex; gap: 2.4rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      text-decoration: none;
+      transition: color var(--transition);
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute; bottom: -3px; left: 0; right: 100%;
+      height: 1px; background: var(--bronze);
+      transition: right var(--transition);
+    }
+    .nav-links a:hover { color: var(--bronze); }
+    .nav-links a:hover::after { right: 0; }
+
+    .nav-cta {
+      background: var(--ink);
+      color: var(--white) !important;
+      padding: 0.55rem 1.4rem !important;
+      font-size: 0.75rem !important;
+      letter-spacing: 0.14em !important;
+      text-transform: uppercase !important;
+      transition: background var(--transition), color var(--transition) !important;
+      border: 1px solid var(--ink) !important;
+    }
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover {
+      background: var(--bronze) !important;
+      border-color: var(--bronze) !important;
+      color: var(--white) !important;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; padding: 4px;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 1px;
+      background: var(--ink);
+      transition: var(--transition);
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none; position: fixed; inset: 72px 0 0 0;
+      background: var(--cream); z-index: 999;
+      padding: 3rem 5vw; flex-direction: column; gap: 2rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: var(--font-display);
+      font-size: 2rem; font-weight: 400;
+      color: var(--ink); text-decoration: none;
+      border-bottom: 1px solid var(--cream-dark);
+      padding-bottom: 1rem;
+    }
+
+    /* ───── HERO ───── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 72px;
+      overflow: hidden;
+    }
+    .hero-left {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 8vh 5vw 8vh 8vw;
+    }
+    .hero-eyebrow {
+      display: flex; align-items: center; gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .hero-eyebrow span {
+      font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--bronze); font-weight: 400;
+    }
+    .hero-eyebrow::before {
+      content: ''; display: block; width: 40px; height: 1px; background: var(--bronze);
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3.2rem, 5.5vw, 5.8rem);
+      font-weight: 300;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 1.8rem;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--bronze);
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 460px;
+      margin-bottom: 3rem;
+      font-weight: 300;
+      line-height: 1.75;
+    }
+    .hero-actions { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: var(--ink);
+      color: var(--white);
+      padding: 1rem 2.2rem;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--ink);
+      transition: all var(--transition);
+    }
+    .btn-primary:hover {
+      background: var(--bronze);
+      border-color: var(--bronze);
+    }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: transparent;
+      color: var(--ink);
+      padding: 1rem 2.2rem;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid rgba(28, 24, 20, 0.3);
+      transition: all var(--transition);
+    }
+    .btn-secondary:hover {
+      border-color: var(--bronze);
+      color: var(--bronze);
+    }
+    .btn-arrow { font-size: 1rem; transition: transform var(--transition); }
+    .btn-primary:hover .btn-arrow,
+    .btn-secondary:hover .btn-arrow { transform: translateX(5px); }
+
+    .hero-right {
+      position: relative; overflow: hidden;
+      background: var(--cream-dark);
+    }
+    .hero-image-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #E8DDD0 0%, #D4C5B0 50%, #C2AD95 100%);
+    }
+    .hero-image-overlay {
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23A0855A' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-shape {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .hero-portrait-placeholder {
+      width: 68%; max-width: 380px;
+      aspect-ratio: 3/4;
+      background: linear-gradient(160deg, rgba(255,255,255,0.35) 0%, rgba(160,133,90,0.2) 100%);
+      border: 1px solid rgba(160, 133, 90, 0.3);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: flex-end;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .portrait-silhouette {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .portrait-silhouette svg { opacity: 0.18; }
+    .hero-name-card {
+      position: relative; z-index: 1;
+      background: rgba(247, 243, 238, 0.95);
+      padding: 1rem 1.5rem;
+      width: 100%;
+      border-top: 2px solid var(--bronze);
+    }
+    .hero-name-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem; font-weight: 500; color: var(--ink);
+    }
+    .hero-name-card p { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bronze); }
+
+    .hero-badge {
+      position: absolute; top: 10%; right: -5%;
+      width: 110px; height: 110px;
+      background: var(--ink);
+      border-radius: 50%;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center;
+      transform: rotate(12deg);
+      animation: spin-slow 20s linear infinite;
+    }
+    @keyframes spin-slow { to { transform: rotate(372deg); } }
+    .hero-badge-inner {
+      font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); line-height: 1.4;
+    }
+
+    .hero-stat-strip {
+      position: absolute; bottom: 8%; left: 50%;
+      transform: translateX(-50%);
+      background: var(--white);
+      padding: 1.2rem 2rem;
+      display: flex; gap: 2.5rem; align-items: center;
+      white-space: nowrap;
+      box-shadow: 0 8px 40px rgba(28, 24, 20, 0.12);
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2rem; font-weight: 500;
+      color: var(--bronze); line-height: 1;
+    }
+    .stat-label { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+    .stat-divider { width: 1px; height: 40px; background: var(--cream-dark); }
+
+    /* ───── MARQUEE ───── */
+    .marquee-strip {
+      background: var(--ink);
+      padding: 1.1rem 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .marquee-track {
+      display: flex; gap: 0;
+      animation: marquee 28s linear infinite;
+    }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+    .marquee-item {
+      display: flex; align-items: center; gap: 2.5rem;
+      padding: 0 2.5rem;
+      font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--accent); white-space: nowrap; font-weight: 400;
+    }
+    .marquee-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--bronze); }
+
+    /* ───── SECTIONS COMMON ───── */
+    section { padding: 7rem 5vw; }
+    .section-eyebrow {
+      display: flex; align-items: center; gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    .section-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--bronze); display: block; }
+    .section-eyebrow span { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--bronze); }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 4vw, 3.8rem);
+      font-weight: 300;
+      line-height: 1.12;
+      color: var(--ink);
+      margin-bottom: 1.4rem;
+    }
+    .section-title em { font-style: italic; color: var(--bronze); }
+    .section-body { font-size: 1rem; color: var(--muted); max-width: 540px; line-height: 1.8; }
+
+    /* ───── PROPÓSITO / ABOUT ───── */
+    .purpose { background: var(--white); }
+    .purpose-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; align-items: center; max-width: 1200px; margin: 0 auto; }
+    .purpose-quote {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      font-style: italic;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.35;
+      padding-left: 2rem;
+      border-left: 2px solid var(--bronze);
+      margin: 2rem 0;
+    }
+    .purpose-values { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2.5rem; }
+    .value-card {
+      padding: 1.5rem;
+      border: 1px solid var(--cream-dark);
+      background: var(--cream);
+      transition: border-color var(--transition), transform var(--transition);
+    }
+    .value-card:hover { border-color: var(--bronze); transform: translateY(-3px); }
+    .value-num {
+      font-family: var(--font-display);
+      font-size: 2.5rem; font-weight: 300;
+      color: rgba(160, 133, 90, 0.25);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .value-label { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 400; }
+    .camila-card {
+      background: var(--cream);
+      padding: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .camila-card::before {
+      content: '"';
+      font-family: var(--font-display);
+      font-size: 12rem; line-height: 1;
+      color: rgba(160, 133, 90, 0.08);
+      position: absolute; top: -1rem; left: 1rem;
+    }
+    .camila-tag { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--bronze); margin-bottom: 0.8rem; }
+    .camila-name { font-family: var(--font-display); font-size: 2.2rem; font-weight: 400; color: var(--ink); margin-bottom: 0.3rem; }
+    .camila-role { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .camila-bio { font-size: 0.95rem; color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.5rem; }
+    .camila-creds { display: flex; flex-direction: column; gap: 0.6rem; }
+    .cred-item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.8rem; color: var(--muted); }
+    .cred-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--bronze); flex-shrink: 0; }
+
+    /* ───── SERVICES ───── */
+    .services { background: var(--cream); }
+    .services-header { max-width: 1200px; margin: 0 auto 4rem; }
+    .services-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--cream-dark); border: 1px solid var(--cream-dark); }
+    .service-card {
+      background: var(--white);
+      padding: 2.5rem;
+      position: relative; overflow: hidden;
+      transition: background var(--transition);
+    }
+    .service-card:hover { background: var(--ink); }
+    .service-card:hover .service-num,
+    .service-card:hover .service-title,
+    .service-card:hover .service-desc,
+    .service-card:hover .service-tags span { color: rgba(247, 243, 238, 0.7); }
+    .service-card:hover .service-title { color: var(--white); }
+    .service-card:hover .service-line { background: var(--bronze); }
+    .service-card:hover .service-arrow { color: var(--bronze); transform: translate(4px, -4px); }
+    .service-num {
+      font-family: var(--font-display);
+      font-size: 4rem; font-weight: 300; line-height: 1;
+      color: rgba(160, 133, 90, 0.15);
+      margin-bottom: 1.2rem;
+      transition: color var(--transition);
+    }
+    .service-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem; font-weight: 400;
+      color: var(--ink); margin-bottom: 0.8rem;
+      transition: color var(--transition);
+    }
+    .service-line { width: 28px; height: 1px; background: var(--bronze); margin-bottom: 1rem; transition: background var(--transition); }
+    .service-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.75; margin-bottom: 1.5rem; transition: color var(--transition); }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 2rem; }
+    .service-tags span {
+      font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--bronze); border: 1px solid rgba(160, 133, 90, 0.35);
+      padding: 0.25rem 0.6rem;
+      transition: color var(--transition);
+    }
+    .service-arrow {
+      position: absolute; bottom: 2rem; right: 2.5rem;
+      font-size: 1.3rem; color: var(--cream-dark);
+      transition: all var(--transition);
+    }
+
+    /* ───── PROCESS ───── */
+    .process { background: var(--ink); }
+    .process-header { max-width: 1200px; margin: 0 auto 4rem; }
+    .process-header .section-title { color: var(--white); }
+    .process-header .section-eyebrow span { color: var(--accent); }
+    .process-header .section-eyebrow::before { background: var(--accent); }
+    .process-header .section-body { color: rgba(247, 243, 238, 0.6); }
+    .process-steps { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+    .process-step { padding: 2.5rem 2rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(160,133,90,0.15); position: relative; }
+    .step-num {
+      font-family: var(--font-display);
+      font-size: 5rem; font-weight: 300; line-height: 1;
+      color: rgba(160, 133, 90, 0.12);
+      margin-bottom: 1.5rem;
+    }
+    .step-title { font-family: var(--font-display); font-size: 1.3rem; color: var(--white); margin-bottom: 0.8rem; }
+    .step-body { font-size: 0.85rem; color: rgba(247, 243, 238, 0.55); line-height: 1.75; }
+    .step-connector {
+      position: absolute; top: 2.5rem; right: -1.5rem;
+      font-size: 1.5rem; color: var(--bronze); z-index: 1;
+    }
+
+    /* ───── PARA QUIÉN ───── */
+    .audience { background: var(--cream-dark); }
+    .audience-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; align-items: start; }
+    .audience-list { display: flex; flex-direction: column; gap: 0; }
+    .audience-item {
+      display: flex; align-items: flex-start; gap: 1.2rem;
+      padding: 1.4rem 0;
+      border-bottom: 1px solid rgba(160, 133, 90, 0.2);
+      transition: padding-left var(--transition);
+    }
+    .audience-item:hover { padding-left: 0.8rem; }
+    .audience-icon { width: 36px; height: 36px; background: var(--bronze); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .audience-icon svg { width: 16px; height: 16px; fill: var(--white); }
+    .audience-text { font-size: 0.95rem; color: var(--ink-soft); line-height: 1.6; }
+    .audience-right { position: sticky; top: 100px; }
+    .audiences-cta-box {
+      background: var(--white);
+      padding: 3rem;
+      border-top: 3px solid var(--bronze);
+    }
+    .audiences-cta-box h3 { font-family: var(--font-display); font-size: 1.8rem; color: var(--ink); margin-bottom: 1rem; font-weight: 300; }
+    .audiences-cta-box p { font-size: 0.9rem; color: var(--muted); margin-bottom: 2rem; line-height: 1.75; }
+
+    /* ───── TESTIMONIOS ───── */
+    .testimonials { background: var(--white); }
+    .testimonials-header { max-width: 1200px; margin: 0 auto 3.5rem; }
+    .testi-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .testi-card {
+      padding: 2.5rem;
+      background: var(--cream);
+      border: 1px solid transparent;
+      position: relative;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .testi-card:hover { border-color: var(--bronze); box-shadow: 0 8px 32px rgba(160, 133, 90, 0.12); }
+    .testi-stars { display: flex; gap: 3px; margin-bottom: 1.2rem; }
+    .testi-star { width: 14px; height: 14px; fill: var(--bronze); }
+    .testi-quote {
+      font-family: var(--font-display);
+      font-size: 1.05rem; font-style: italic;
+      color: var(--ink); line-height: 1.65; margin-bottom: 1.5rem;
+    }
+    .testi-author { border-top: 1px solid var(--cream-dark); padding-top: 1.2rem; }
+    .testi-name { font-size: 0.8rem; font-weight: 500; color: var(--ink-soft); letter-spacing: 0.06em; text-transform: uppercase; }
+    .testi-role { font-size: 0.75rem; color: var(--bronze); }
+
+    /* ───── FAQ ───── */
+    .faq { background: var(--cream); }
+    .faq-container { max-width: 800px; margin: 0 auto; }
+    .faq-header { margin-bottom: 3rem; }
+    .faq-item { border-bottom: 1px solid var(--cream-dark); }
+    .faq-question {
+      width: 100%; background: none; border: none; padding: 1.5rem 0;
+      display: flex; justify-content: space-between; align-items: center;
+      font-family: var(--font-display);
+      font-size: 1.15rem; font-weight: 400;
+      color: var(--ink); text-align: left; line-height: 1.4;
+    }
+    .faq-question:hover { color: var(--bronze); }
+    .faq-icon { width: 24px; height: 24px; flex-shrink: 0; position: relative; margin-left: 1rem; }
+    .faq-icon::before, .faq-icon::after { content: ''; position: absolute; background: currentColor; border-radius: 1px; transition: var(--transition); }
+    .faq-icon::before { width: 1px; height: 14px; top: 5px; left: 11px; }
+    .faq-icon::after { width: 14px; height: 1px; top: 11px; left: 5px; }
+    .faq-item.open .faq-icon::before { transform: rotate(90deg); opacity: 0; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .faq-item.open .faq-answer { max-height: 300px; }
+    .faq-answer-inner { font-size: 0.92rem; color: var(--muted); line-height: 1.8; padding-bottom: 1.5rem; }
+
+    /* ───── CONTACTO / FORM ───── */
+    .contact { background: var(--ink); }
+    .contact-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 8vw; align-items: start; }
+    .contact-left .section-title { color: var(--white); }
+    .contact-left .section-eyebrow span { color: var(--accent); }
+    .contact-left .section-eyebrow::before { background: var(--accent); }
+    .contact-left .section-body { color: rgba(247, 243, 238, 0.6); }
+    .contact-info { margin-top: 3rem; display: flex; flex-direction: column; gap: 1.5rem; }
+    .contact-item { display: flex; align-items: flex-start; gap: 1rem; }
+    .contact-item-icon { width: 40px; height: 40px; border: 1px solid rgba(160,133,90,0.4); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .contact-item-icon svg { width: 18px; height: 18px; stroke: var(--accent); fill: none; stroke-width: 1.5; }
+    .contact-item-text { font-size: 0.88rem; color: rgba(247, 243, 238, 0.65); line-height: 1.6; }
+    .contact-item-text strong { display: block; color: var(--white); font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.2rem; font-weight: 400; }
+
+    /* Form */
+    .contact-form { background: var(--white); padding: 3rem; }
+    .form-title { font-family: var(--font-display); font-size: 1.6rem; color: var(--ink); margin-bottom: 0.5rem; }
+    .form-sub { font-size: 0.85rem; color: var(--muted); margin-bottom: 2rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+    .form-group label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); }
+    .form-group input, .form-group select, .form-group textarea {
+      background: var(--cream);
+      border: 1px solid var(--cream-dark);
+      padding: 0.85rem 1rem;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--ink);
+      outline: none;
+      transition: border-color var(--transition), background var(--transition);
+      -webkit-appearance: none; appearance: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--bronze);
+      background: var(--white);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-group select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23A0855A' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; }
+    .form-privacy { display: flex; align-items: flex-start; gap: 0.7rem; margin-bottom: 1.5rem; }
+    .form-privacy input[type="checkbox"] { margin-top: 3px; accent-color: var(--bronze); flex-shrink: 0; }
+    .form-privacy label { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+    .form-submit {
+      width: 100%;
+      background: var(--ink);
+      color: var(--white);
+      border: none; padding: 1.1rem;
+      font-family: var(--font-body);
+      font-size: 0.8rem; font-weight: 400;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      transition: background var(--transition);
+    }
+    .form-submit:hover { background: var(--bronze); }
+    .form-success { display: none; text-align: center; padding: 3rem; }
+    .form-success.show { display: block; }
+    .form-content.hidden { display: none; }
+    .success-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .success-title { font-family: var(--font-display); font-size: 1.8rem; color: var(--ink); margin-bottom: 0.5rem; }
+    .success-msg { font-size: 0.9rem; color: var(--muted); }
+
+    /* ───── FOOTER ───── */
+    footer { background: #120F0C; padding: 4rem 5vw 2rem; }
+    .footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 4rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .footer-logo { font-family: var(--font-display); font-size: 1.6rem; color: var(--white); margin-bottom: 1rem; }
+    .footer-logo span { color: var(--accent); }
+    .footer-tagline { font-size: 0.85rem; color: rgba(255,255,255,0.4); line-height: 1.7; max-width: 260px; }
+    .footer-col h4 { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.2rem; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+    .footer-col ul li a { font-size: 0.85rem; color: rgba(255,255,255,0.45); text-decoration: none; transition: color var(--transition); }
+    .footer-col ul li a:hover { color: var(--accent); }
+    .footer-bottom { max-width: 1200px; margin: 2rem auto 0; display: flex; justify-content: space-between; align-items: center; }
+    .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.25); }
+    .footer-social { display: flex; gap: 1.2rem; }
+    .footer-social a { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.3); text-decoration: none; transition: color var(--transition); }
+    .footer-social a:hover { color: var(--accent); }
+
+    /* ───── FLOATING WA ───── */
+    .wa-float {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 900;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      text-decoration: none;
+      transition: transform var(--transition), box-shadow var(--transition);
+      animation: pulse-wa 3s ease-in-out infinite;
+    }
+    @keyframes pulse-wa {
+      0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+      50% { box-shadow: 0 4px 32px rgba(37,211,102,0.7); }
+    }
+    .wa-float:hover { transform: scale(1.1); }
+    .wa-float svg { width: 28px; height: 28px; fill: white; }
+
+    /* ───── SCROLL REVEAL ───── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.22s; }
+    .reveal-delay-3 { transition-delay: 0.34s; }
+
+    /* ───── RESPONSIVE ───── */
+    @media (max-width: 1024px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-right { height: 65vw; min-height: 320px; }
+      .purpose-grid, .audience-grid, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .step-connector { display: none; }
+      .testi-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      section { padding: 5rem 5vw; }
+      .hero-left { padding: 6vh 5vw 4vh; }
+      .hero-stat-strip { gap: 1.5rem; padding: 1rem 1.2rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+      .purpose-values { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/56900000000?text=Hola%20Camila%2C%20me%20interesa%20saber%20más%20sobre%20la%20asesoría%20de%20imagen." class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- NAV -->
+  <nav id="mainNav">
+    <a href="#inicio" class="logo">CHIC <span>&</span> CALM</a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#proceso">Metodología</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contacto" class="nav-cta">Agendar asesoría</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicios">Servicios</a>
+    <a href="#proceso">Metodología</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contacto">Agendar asesoría →</a>
+  </div>
+
+  <!-- HERO -->
+  <main>
+  <section id="inicio" class="hero" aria-label="Inicio">
+    <div class="hero-left">
+      <div class="hero-eyebrow reveal">
+        <span>Asesoría de imagen personal y corporativa en Chile</span>
+      </div>
+      <h1 class="reveal reveal-delay-1">
+        Tu imagen<br>habla antes<br>de que lo<br><em>hagas tú.</em>
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        No se trata de disfrazarte. Se trata de proyectar con intención lo mejor de ti —
+        en reuniones, entrevistas, redes, eventos y cada espacio donde tu presencia importa.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#contacto" class="btn-primary">
+          Agendar diagnóstico <span class="btn-arrow">→</span>
+        </a>
+        <a href="#servicios" class="btn-secondary">
+          Ver servicios <span class="btn-arrow">↓</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-image-bg"></div>
+      <div class="hero-image-overlay"></div>
+      <div class="hero-shape">
+        <div class="hero-portrait-placeholder">
+          <div class="portrait-silhouette">
+            <svg width="200" height="300" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="100" cy="72" rx="42" ry="52" fill="#7A6240"/>
+              <path d="M20 300 Q20 200 100 180 Q180 200 180 300Z" fill="#7A6240"/>
+            </svg>
+          </div>
+          <div class="hero-name-card">
+            <p class="hero-name-card p" style="font-size:0.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze);margin-bottom:.2rem;">Fundadora &amp; Asesora</p>
+            <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:500;color:var(--ink);">Camila Díaz</h3>
+            <p style="font-size:.72rem;letter-spacing:.08em;color:var(--muted);">Relacionadora Pública · +20 años de experiencia</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <div class="hero-badge-inner">+20<br>años<br>de<br>exp.</div>
+      </div>
+      <div class="hero-stat-strip">
+        <div class="stat-item">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Clientes</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">20</div>
+          <div class="stat-label">Años</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Online &amp; Presencial</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track" id="marquee">
+      <div class="marquee-item">Asesoría de imagen personal <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Colorimetría &amp; morfología <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Imagen ejecutiva <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Marca personal <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Personal shopper <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Fondo de armario <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Imagen corporativa <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Dress code empresarial <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Capacitación corporativa <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Santiago · Online para todo Chile <span class="marquee-dot"></span></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item">Asesoría de imagen personal <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Colorimetría &amp; morfología <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Imagen ejecutiva <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Marca personal <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Personal shopper <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Fondo de armario <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Imagen corporativa <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Dress code empresarial <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Capacitación corporativa <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Santiago · Online para todo Chile <span class="marquee-dot"></span></div>
+    </div>
+  </div>
+
+  <!-- PROPÓSITO / SOBRE MÍ -->
+  <section id="sobre-mi" class="purpose" aria-label="Sobre Camila Díaz">
+    <div class="purpose-grid">
+      <div>
+        <div class="section-eyebrow reveal"><span>Sobre Chic &amp; Calm</span></div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Imagen coherente<br>con quien<br><em>realmente eres.</em>
+        </h2>
+        <blockquote class="purpose-quote reveal reveal-delay-2">
+          "No busco cambiarte. Busco que tu presencia cuente la misma historia que tú."
+        </blockquote>
+        <p class="section-body reveal reveal-delay-3">
+          En Chile, la asesoría de imagen se transformó en herramienta estratégica. No es moda ni vanidad:
+          es comunicación visual. Cuando tu presencia está alineada con tus objetivos, la conversación avanza sola.
+        </p>
+        <div class="purpose-values reveal" style="margin-top:2.5rem;">
+          <div class="value-card">
+            <div class="value-num">01</div>
+            <div class="value-label">Identidad primero</div>
+          </div>
+          <div class="value-card">
+            <div class="value-num">02</div>
+            <div class="value-label">Estrategia, no moda</div>
+          </div>
+          <div class="value-card">
+            <div class="value-num">03</div>
+            <div class="value-label">Herramientas reales</div>
+          </div>
+          <div class="value-card">
+            <div class="value-num">04</div>
+            <div class="value-label">Contexto chileno</div>
+          </div>
+        </div>
+      </div>
+      <div class="camila-card reveal">
+        <div class="camila-tag">Fundadora &amp; Directora</div>
+        <div class="camila-name">Camila Díaz</div>
+        <div class="camila-role">Relacionadora Pública · Asesora de Imagen Personal y Corporativa</div>
+        <p class="camila-bio">
+          Con más de 20 años de trayectoria en asesoría de imagen y gestión de eventos en Chile,
+          Camila combina la solidez de la comunicación estratégica con una mirada práctica y cercana.
+          Ha trabajado con ejecutivos, empresas, emprendedores y personas en todo tipo de transiciones
+          profesionales y personales.
+        </p>
+        <p class="camila-bio">
+          Su enfoque no parte de la ropa. Parte de la persona. Cada proceso es único porque cada persona
+          tiene una vida distinta, objetivos distintos y una voz visual que vale la pena desarrollar.
+        </p>
+        <div class="camila-creds">
+          <div class="cred-item"><span class="cred-dot"></span>Relacionadora Pública — Universidad de Chile</div>
+          <div class="cred-item"><span class="cred-dot"></span>Especialización en Asesoría de Imagen y Protocolo</div>
+          <div class="cred-item"><span class="cred-dot"></span>+20 años asesorando personas y empresas en Chile</div>
+          <div class="cred-item"><span class="cred-dot"></span>Atención presencial en Santiago y online para todo Chile</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="servicios" class="services" aria-label="Servicios de asesoría de imagen">
+    <div class="services-header">
+      <div class="section-eyebrow reveal"><span>Servicios</span></div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Todo lo que<br>tu imagen<br><em>necesita.</em>
+      </h2>
+      <p class="section-body reveal reveal-delay-2">
+        Servicios diseñados para personas y empresas en Chile. Presencial en Santiago,
+        online para todo el país. Cada proceso comienza con un diagnóstico.
+      </p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="service-num">01</div>
+        <h3 class="service-title">Asesoría de Imagen Personal</h3>
+        <div class="service-line"></div>
+        <p class="service-desc">Construye una presencia auténtica y funcional. Ordenamos tu estilo, definimos colores, morfología, guardarropa y combinaciones para tu vida real.</p>
+        <div class="service-tags"><span>Estilo</span><span>Colorimetría</span><span>Morfología</span><span>Guardarropa</span></div>
+        <span class="service-arrow">↗</span>
+      </article>
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-num">02</div>
+        <h3 class="service-title">Imagen Ejecutiva &amp; Marca Personal</h3>
+        <div class="service-line"></div>
+        <p class="service-desc">Para profesionales, líderes, ejecutivos y emprendedores que necesitan proyectar confianza, autoridad y coherencia en reuniones, LinkedIn y contextos de alto impacto.</p>
+        <div class="service-tags"><span>Liderazgo</span><span>LinkedIn</span><span>Reuniones</span><span>Marca</span></div>
+        <span class="service-arrow">↗</span>
+      </article>
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-num">03</div>
+        <h3 class="service-title">Asesoría de Imagen Corporativa</h3>
+        <div class="service-line"></div>
+        <p class="service-desc">Alineamos la presencia de tus equipos con la cultura y experiencia de cliente de tu empresa. Dress code, capacitación y manuales de imagen para empresas chilenas.</p>
+        <div class="service-tags"><span>Dress code</span><span>Equipos</span><span>Talleres</span><span>Manual</span></div>
+        <span class="service-arrow">↗</span>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-num">04</div>
+        <h3 class="service-title">Colorimetría &amp; Morfología</h3>
+        <div class="service-line"></div>
+        <p class="service-desc">Identificamos tu paleta de colores y las proporciones que mejor acompañan tu silueta. Comprás con criterio, no con impulso.</p>
+        <div class="service-tags"><span>Paleta</span><span>Colores</span><span>Silueta</span><span>Compras</span></div>
+        <span class="service-arrow">↗</span>
+      </article>
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-num">05</div>
+        <h3 class="service-title">Personal Shopper &amp; Fondo de Armario</h3>
+        <div class="service-line"></div>
+        <p class="service-desc">Construimos un guardarropa funcional: prendas versátiles, combinables y reales para tu vida. Comprás menos y usás más. Sin estatuas textiles en el clóset.</p>
+        <div class="service-tags"><span>Compras</span><span>Clóset</span><span>Cápsula</span><span>Estrategia</span></div>
+        <span class="service-arrow">↗</span>
+      </article>
+      <article class="service-card reveal reveal-delay-2" style="background: var(--ink);">
+        <div class="service-num" style="color:rgba(160,133,90,0.25);">06</div>
+        <h3 class="service-title" style="color:var(--white);">Asesoría Online</h3>
+        <div class="service-line"></div>
+        <p class="service-desc" style="color:rgba(247,243,238,0.6);">Todo lo anterior disponible en modalidad 100% online. Videollamada, guías descargables, análisis de fotos y seguimiento digital para cualquier ciudad de Chile.</p>
+        <div class="service-tags">
+          <span style="color:var(--accent);border-color:rgba(160,133,90,0.4);">100% Online</span>
+          <span style="color:var(--accent);border-color:rgba(160,133,90,0.4);">Todo Chile</span>
+          <span style="color:var(--accent);border-color:rgba(160,133,90,0.4);">Flexible</span>
+        </div>
+        <a href="#contacto" class="btn-primary" style="display:inline-flex;margin-top:1.5rem;font-size:.72rem;">Agendar ahora →</a>
+        <span class="service-arrow" style="color:var(--bronze);">↗</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="proceso" class="process" aria-label="Metodología de trabajo">
+    <div class="process-header">
+      <div class="section-eyebrow reveal"><span>Metodología</span></div>
+      <h2 class="section-title reveal reveal-delay-1">Cómo<br><em>trabajamos</em><br>juntos.</h2>
+      <p class="section-body reveal reveal-delay-2">
+        Un proceso estructurado pero flexible, diseñado para entregar herramientas reales —
+        no carpetas bonitas que nadie vuelve a abrir.
+      </p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <h3 class="step-title">Diagnóstico</h3>
+        <p class="step-body">Analizamos tu contexto, objetivos, estilo de vida, actividades, desafíos y oportunidades de mejora. Sin juicios.</p>
+        <span class="step-connector">→</span>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="step-num">02</div>
+        <h3 class="step-title">Estrategia visual</h3>
+        <p class="step-body">Diseñamos tu ruta de imagen: colores, cortes, prendas clave, presencia ejecutiva, digital y coherencia de marca personal.</p>
+        <span class="step-connector">→</span>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="step-num">03</div>
+        <h3 class="step-title">Implementación</h3>
+        <p class="step-body">Entregamos herramientas concretas: combinaciones, paleta, guía de compras, outfits por ocasión, dress code y pautas de presencia.</p>
+        <span class="step-connector">→</span>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="step-num">04</div>
+        <h3 class="step-title">Seguimiento</h3>
+        <p class="step-body">Acompañamos el cambio. La imagen se construye con decisiones repetidas, no con una inspiración de domingo por la noche.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUIÉN -->
+  <section class="audience" aria-label="¿Para quién es la asesoría de imagen?">
+    <div class="audience-grid">
+      <div>
+        <div class="section-eyebrow reveal"><span>¿Es para ti?</span></div>
+        <h2 class="section-title reveal reveal-delay-1">Diseñado para<br>personas con<br><em>objetivos concretos.</em></h2>
+        <div class="audience-list">
+          <div class="audience-item reveal">
+            <div class="audience-icon"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+            <div class="audience-text">Profesionales que quieren proyectar más seguridad y liderazgo en reuniones, directorios o ventas consultivas.</div>
+          </div>
+          <div class="audience-item reveal reveal-delay-1">
+            <div class="audience-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+            <div class="audience-text">Ejecutivos, abogados, médicos, consultores, agentes inmobiliarios y emprendedores que son la cara visible de su negocio.</div>
+          </div>
+          <div class="audience-item reveal reveal-delay-2">
+            <div class="audience-icon"><svg viewBox="0 0 24 24"><path d="M12 22V12M2 12l10-10 10 10"/></svg></div>
+            <div class="audience-text">Personas en transición laboral: nuevo cargo, entrevista importante, emprendimiento, maternidad o cambio de rubro.</div>
+          </div>
+          <div class="audience-item reveal">
+            <div class="audience-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <div class="audience-text">Empresas y equipos que necesitan alinear su imagen con la cultura, atención al cliente y posicionamiento de marca.</div>
+          </div>
+          <div class="audience-item reveal reveal-delay-1">
+            <div class="audience-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+            <div class="audience-text">Quienes quieren mejorar su presencia en LinkedIn, fotos profesionales, videollamadas y redes sociales de marca personal.</div>
+          </div>
+          <div class="audience-item reveal reveal-delay-2">
+            <div class="audience-icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+            <div class="audience-text">Mujeres y hombres con guardarropa lleno pero pocas combinaciones claras, o que compran sin criterio.</div>
+          </div>
+        </div>
+      </div>
+      <div class="audience-right reveal">
+        <div class="audiences-cta-box">
+          <h3>¿No sabes por<br><em style="font-family:var(--font-display);font-style:italic;color:var(--bronze);">dónde empezar?</em></h3>
+          <p>El primer paso es una consulta inicial sin costo donde identificamos tus necesidades y te recomendamos el servicio más adecuado para tus objetivos.</p>
+          <a href="#contacto" class="btn-primary" style="display:inline-flex;">Quiero mi diagnóstico inicial <span class="btn-arrow">→</span></a>
+          <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid var(--cream-dark);">
+            <p style="font-size:.78rem;color:var(--muted);margin-bottom:.8rem;letter-spacing:.08em;text-transform:uppercase;">Modalidades disponibles</p>
+            <div style="display:flex;gap:.8rem;flex-wrap:wrap;">
+              <span style="font-size:.75rem;border:1px solid var(--cream-dark);padding:.35rem .8rem;color:var(--ink-soft);">Presencial Santiago</span>
+              <span style="font-size:.75rem;border:1px solid var(--cream-dark);padding:.35rem .8rem;color:var(--ink-soft);">Online Chile</span>
+              <span style="font-size:.75rem;border:1px solid var(--cream-dark);padding:.35rem .8rem;color:var(--ink-soft);">Corporativo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials" aria-label="Testimonios de clientes">
+    <div class="testimonials-header">
+      <div class="section-eyebrow reveal"><span>Testimonios</span></div>
+      <h2 class="section-title reveal reveal-delay-1">Lo que dicen<br><em>quienes ya trabajaron</em><br>con Camila.</h2>
+    </div>
+    <div class="testi-grid">
+      <article class="testi-card reveal">
+        <div class="testi-stars">
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testi-quote">"Camila me ayudó a entender qué comunica mi imagen antes de decir una sola palabra. Cambié mi forma de vestir para reuniones y mejoró notablemente cómo me perciben mis clientes."</p>
+        <div class="testi-author">
+          <div class="testi-name">Rodrigo M.</div>
+          <div class="testi-role">Consultor de negocios — Santiago</div>
+        </div>
+      </article>
+      <article class="testi-card reveal reveal-delay-1">
+        <div class="testi-stars">
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testi-quote">"Tenía el clóset lleno y sentía que no tenía nada qué ponerme. La asesoría me dio criterio, no más ropa. Ahora compro con dirección y me visto con seguridad."</p>
+        <div class="testi-author">
+          <div class="testi-name">Valentina O.</div>
+          <div class="testi-role">Gerente de Marketing — Las Condes</div>
+        </div>
+      </article>
+      <article class="testi-card reveal reveal-delay-2">
+        <div class="testi-stars">
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="testi-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="testi-quote">"Contratamos a Camila para capacitar a nuestro equipo comercial. Los resultados en percepción de cliente fueron evidentes desde la primera semana. Muy recomendable para empresas."</p>
+        <div class="testi-author">
+          <div class="testi-name">Andrea P.</div>
+          <div class="testi-role">Directora Comercial — Empresa inmobiliaria</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq" aria-label="Preguntas frecuentes sobre asesoría de imagen">
+    <div class="faq-container">
+      <div class="faq-header">
+        <div class="section-eyebrow reveal"><span>Preguntas frecuentes</span></div>
+        <h2 class="section-title reveal reveal-delay-1">Lo que todos<br><em>quieren saber</em><br>antes de empezar.</h2>
+      </div>
+
+      <div class="faq-item reveal" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" itemprop="name" aria-expanded="false">
+          ¿La asesoría de imagen es solo para verse más elegante?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-answer-inner" itemprop="text">No. La elegancia puede ser un resultado, pero no es el objetivo principal. La asesoría busca coherencia, funcionalidad y estrategia. A veces la meta es verse más profesional; otras, más cercano, creativo, actualizado o confiable. El punto de partida es siempre quién eres y qué quieres comunicar.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" itemprop="name" aria-expanded="false">
+          ¿La asesoría va a cambiar mi estilo por completo?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-answer-inner" itemprop="text">No debería. Una buena asesoría no te disfraza. Trabaja desde tu identidad, tu contexto y tus objetivos. El cambio puede ser sutil o profundo, pero siempre debe sentirse propio. Si salís sintiéndote otra persona, algo estuvo mal.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" itemprop="name" aria-expanded="false">
+          ¿Se puede hacer asesoría de imagen online?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-answer-inner" itemprop="text">Sí, y funciona muy bien si está estructurada correctamente. Diagnóstico de estilo, revisión de prendas por fotos, guía de compras, análisis de colorimetría orientativa, marca personal y seguimiento digital son perfectamente viables online. Atendemos a personas en todo Chile vía videollamada.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" itemprop="name" aria-expanded="false">
+          ¿Es para hombres también?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-answer-inner" itemprop="text">Sí. La imagen personal y profesional aplica a todas las personas. En hombres suele trabajarse mucho imagen ejecutiva, calce de ropa, combinaciones, códigos laborales, accesorios, presencia digital y compra estratégica. Cada proceso se adapta completamente.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" itemprop="name" aria-expanded="false">
+          ¿Necesito comprar mucha ropa nueva después?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-answer-inner" itemprop="text">No necesariamente. A veces basta con combinar mejor lo que ya tienes, ajustar algunas prendas o retirar lo que no funciona. Si se recomiendan compras, responden a brechas concretas identificadas en el diagnóstico, no a tendencias del momento.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" itemprop="name" aria-expanded="false">
+          ¿Cuánto dura el proceso?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-answer-inner" itemprop="text">Depende del alcance. Una sesión puntual puede durar entre 1 y 3 horas, mientras que un proceso completo con clóset, colorimetría, compras y seguimiento puede desarrollarse en varias etapas. Lo importante es que al finalizar tengas herramientas aplicables, no solo inspiración.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" itemscope itemtype="https://schema.org/Question">
+        <button class="faq-question" itemprop="name" aria-expanded="false">
+          ¿La asesoría corporativa sirve para empresas pequeñas?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-answer-inner" itemprop="text">Sí. De hecho, en las pymes puede ser incluso más importante, porque pocas personas representan toda la marca. Un equipo de 3 personas que proyecta imagen coherente puede competir en percepción con empresas más grandes. El tamaño no exime de la necesidad de coherencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact" aria-label="Formulario de contacto y agenda">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div class="section-eyebrow reveal"><span>Contacto</span></div>
+        <h2 class="section-title reveal reveal-delay-1">Agenda tu<br>diagnóstico<br><em>inicial.</em></h2>
+        <p class="section-body reveal reveal-delay-2">
+          El primer paso es una conversación. Sin compromiso, sin presión. Cuéntanos tu objetivo y te
+          decimos qué servicio tiene más sentido para ti.
+        </p>
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <strong>WhatsApp</strong>
+              +56 9 XXXX XXXX
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <strong>Email</strong>
+              hola@chicandcalm.cl
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <strong>Ubicación</strong>
+              Santiago, Chile · Atención online para todo el país
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <strong>LinkedIn & Instagram</strong>
+              @chicandcalm
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-content" id="formContent">
+          <h3 class="form-title">Escríbenos</h3>
+          <p class="form-sub">Completá el formulario y te contactamos a la brevedad para coordinar tu diagnóstico inicial.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="given-name">
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido *</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required autocomplete="family-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.cl" required autocomplete="email">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefono">Teléfono / WhatsApp</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+56 9 XXXX XXXX" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label for="servicio">Servicio de interés *</label>
+                <select id="servicio" name="servicio" required>
+                  <option value="">Selecciona un servicio</option>
+                  <option value="imagen-personal">Asesoría de Imagen Personal</option>
+                  <option value="imagen-ejecutiva">Imagen Ejecutiva / Marca Personal</option>
+                  <option value="imagen-corporativa">Asesoría Corporativa / Empresas</option>
+                  <option value="colorimetria">Colorimetría y Morfología</option>
+                  <option value="personal-shopper">Personal Shopper / Fondo de Armario</option>
+                  <option value="online">Asesoría Online</option>
+                  <option value="no-se">No sé aún, quiero orientación</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="modalidad">Modalidad preferida</label>
+              <select id="modalidad" name="modalidad">
+                <option value="">¿Presencial o online?</option>
+                <option value="presencial">Presencial (Santiago)</option>
+                <option value="online">Online (cualquier ciudad)</option>
+                <option value="indiferente">Me es indiferente</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Cuéntanos brevemente qué buscas *</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Ej: Quiero mejorar mi imagen para reuniones de trabajo, tengo una entrevista importante, quiero renovar mi guardarropa…" required></textarea>
+            </div>
+            <div class="form-privacy">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">Acepto que Chic &amp; Calm use mis datos para responder mi consulta. No compartimos información con terceros.</label>
+            </div>
+            <button type="submit" class="form-submit">Enviar consulta →</button>
+          </form>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">✓</div>
+          <div class="success-title">¡Consulta recibida!</div>
+          <p class="success-msg">Camila se pondrá en contacto contigo en las próximas 24 horas hábiles para coordinar tu diagnóstico inicial.<br><br>Mientras tanto, puedes escribir directamente por WhatsApp si prefieres una respuesta más rápida.</p>
+          <a href="https://wa.me/56900000000" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex;margin-top:2rem;">Ir a WhatsApp →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">CHIC <span>&</span> CALM</div>
+        <p class="footer-tagline">Asesoría de imagen personal y corporativa en Chile.<br>Por Camila Díaz, Relacionadora Pública.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Imagen Personal</a></li>
+          <li><a href="#servicios">Imagen Ejecutiva</a></li>
+          <li><a href="#servicios">Imagen Corporativa</a></li>
+          <li><a href="#servicios">Colorimetría</a></li>
+          <li><a href="#servicios">Personal Shopper</a></li>
+          <li><a href="#servicios">Asesoría Online</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#proceso">Metodología</a></li>
+          <li><a href="#sobre-mi">Sobre Camila</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@chicandcalm.cl">hola@chicandcalm.cl</a></li>
+          <li><a href="https://wa.me/56900000000">WhatsApp</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Chic &amp; Calm — Camila Díaz. Todos los derechos reservados. Santiago, Chile.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; });
+    function animRing() { rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(animRing); }
+    animRing();
+    document.querySelectorAll('a, button').forEach(el => { el.addEventListener('mouseenter', () => { cursor.style.width = '18px'; cursor.style.height = '18px'; ring.style.width = '54px'; ring.style.height = '54px'; }); el.addEventListener('mouseleave', () => { cursor.style.width = '10px'; cursor.style.height = '10px'; ring.style.width = '36px'; ring.style.height = '36px'; }); });
+
+    // ── Nav scroll
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
+
+    // ── Hamburger
+    const ham = document.getElementById('hamburger');
+    const mob = document.getElementById('mobileMenu');
+    ham.addEventListener('click', () => { ham.classList.toggle('open'); mob.classList.toggle('open'); document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : ''; });
+    mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { ham.classList.remove('open'); mob.classList.remove('open'); document.body.style.overflow = ''; }));
+
+    // ── Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }); }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // ── FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-question').setAttribute('aria-expanded', 'false'); });
+        if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+
+    // ── Form submit
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const required = this.querySelectorAll('[required]');
+      let valid = true;
+      required.forEach(f => { if (!f.value.trim() || (f.type === 'checkbox' && !f.checked)) { f.style.borderColor = '#E24B4A'; valid = false; } else { f.style.borderColor = ''; } });
+      if (!valid) return;
+      document.getElementById('formContent').classList.add('hidden');
+      document.getElementById('formSuccess').classList.add('show');
+    });
+
+    // ── Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+      document.querySelectorAll('.nav-links a').forEach(a => { a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--bronze)' : ''; });
+    }, { passive: true });
+  </script>
+</body>
+</html>
