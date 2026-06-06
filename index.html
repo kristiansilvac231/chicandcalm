@@ -295,7 +295,6 @@
     .hero-portrait-placeholder {
       width: 68%; max-width: 380px;
       aspect-ratio: 3/4;
-      background: linear-gradient(160deg, rgba(255,255,255,0.35) 0%, rgba(160,133,90,0.2) 100%);
       border: 1px solid rgba(160, 133, 90, 0.3);
       display: flex; flex-direction: column;
       align-items: center; justify-content: flex-end;
@@ -303,11 +302,11 @@
       position: relative;
       overflow: hidden;
     }
-    .portrait-silhouette {
+    .hero-portrait-placeholder img.camila-photo {
       position: absolute; inset: 0;
-      display: flex; align-items: center; justify-content: center;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center top;
     }
-    .portrait-silhouette svg { opacity: 0.18; }
     .hero-name-card {
       position: relative; z-index: 1;
       background: rgba(247, 243, 238, 0.95);
@@ -770,12 +769,7 @@
       <div class="hero-image-overlay"></div>
       <div class="hero-shape">
         <div class="hero-portrait-placeholder">
-          <div class="portrait-silhouette">
-            <svg width="200" height="300" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="100" cy="72" rx="42" ry="52" fill="#7A6240"/>
-              <path d="M20 300 Q20 200 100 180 Q180 200 180 300Z" fill="#7A6240"/>
-            </svg>
-          </div>
+          <img class="camila-photo" src="camila.jpg" alt="Camila Díaz — Fundadora de Chic & Calm">
           <div class="hero-name-card">
             <p class="hero-name-card p" style="font-size:0.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze);margin-bottom:.2rem;">Fundadora &amp; Asesora</p>
             <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:500;color:var(--ink);">Camila Díaz</h3>
@@ -881,7 +875,7 @@
           tiene una vida distinta, objetivos distintos y una voz visual que vale la pena desarrollar.
         </p>
         <div class="camila-creds">
-          <div class="cred-item"><span class="cred-dot"></span>Relacionadora Pública — Universidad de Chile</div>
+          <div class="cred-item"><span class="cred-dot"></span>Relacionadora Pública — Universidad del Pacífico</div>
           <div class="cred-item"><span class="cred-dot"></span>Especialización en Asesoría de Imagen y Protocolo</div>
           <div class="cred-item"><span class="cred-dot"></span>+20 años asesorando personas y empresas en Chile</div>
           <div class="cred-item"><span class="cred-dot"></span>Atención presencial en Santiago y online para todo Chile</div>
