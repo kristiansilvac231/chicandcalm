@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.chicandcalm.cl/sitemap.xml
+Sitemap: https://www.imagencalma.cl/sitemap.xml
