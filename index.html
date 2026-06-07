@@ -294,13 +294,14 @@
       display: flex; align-items: center; justify-content: center;
       overflow: hidden;
     }
-    .hero-portrait-placeholder {
+    .hero-portrait-wrap {
       width: 68%; max-width: 380px;
+      position: relative; flex-shrink: 0;
+    }
+    .hero-portrait-placeholder {
+      width: 100%;
       aspect-ratio: 3/4;
       border: 1px solid rgba(160, 133, 90, 0.3);
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: flex-end;
-      padding: 2rem;
       position: relative;
       overflow: hidden;
     }
@@ -310,11 +311,13 @@
       object-fit: cover; object-position: center top;
     }
     .hero-name-card {
-      position: relative; z-index: 1;
+      position: absolute; bottom: 0; left: 0; right: 0;
+      z-index: 1;
       background: rgba(247, 243, 238, 0.95);
       padding: 1rem 1.5rem;
       width: 100%;
       border-top: 2px solid var(--bronze);
+      box-sizing: border-box;
     }
     .hero-name-card h3 {
       font-family: var(--font-display);
@@ -705,73 +708,65 @@
       .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
       .purpose-values { grid-template-columns: 1fr; }
 
-      /* ── Hero móvil: reflow columna foto → tarjeta → stats ── */
-      .hero-right {
-        height: auto;
-        min-height: unset;
-        display: flex;
-        flex-direction: column;
-      }
+      /* ── Hero móvil: columna foto → tarjeta → stats ── */
+      .hero-right { height: auto; min-height: unset; display: flex; flex-direction: column; }
 
       .hero-shape {
         position: relative;
         top: auto; right: auto; bottom: auto; left: auto;
-        display: block;
-        width: 100%;
-        overflow: visible;
+        display: block; width: 100%; overflow: visible;
       }
 
+      .hero-portrait-wrap { width: 100%; max-width: none; }
+
       .hero-portrait-placeholder {
-        width: 100%;
-        max-width: none;
-        aspect-ratio: unset;
         height: auto;
-        padding: 0;
-        border: none;
-        display: flex;
-        flex-direction: column;
+        aspect-ratio: 3/4;
+        width: 100%;
+        overflow: hidden;
         position: relative;
+        border: none;
       }
 
       .hero-portrait-placeholder img.camila-photo {
-        position: relative;
-        top: auto; right: auto; bottom: auto; left: auto;
-        width: 100%;
-        height: 74vw;
-        min-height: 260px;
-        object-fit: cover;
+        position: absolute; inset: 0;
+        width: 100%; height: 100%;
+        object-fit: contain;
         object-position: center top;
+        background: var(--cream-dark);
       }
 
       .hero-name-card {
         position: relative;
-        z-index: 1;
-        background: rgba(247, 243, 238, 0.97);
-        padding: 0.9rem 1.2rem;
+        bottom: auto; left: auto; right: auto;
+        display: block;
         width: 100%;
+        background: var(--white);
+        padding: 1rem 1.2rem;
+        border-top: 2px solid var(--bronze);
         box-sizing: border-box;
-        backdrop-filter: none;
       }
       .hero-name-card h3 { font-size: 1.05rem; }
       .hero-name-card p  { font-size: 0.65rem; }
+
+      .hero-badge { display: none; }
 
       .hero-stat-strip {
         position: relative;
         bottom: auto; left: auto;
         transform: none;
         width: 100%;
-        box-sizing: border-box;
+        margin-top: 0;
+        display: flex;
         justify-content: space-around;
-        gap: 0.5rem;
-        padding: 1rem 0.8rem;
+        padding: 1rem;
+        box-sizing: border-box;
         box-shadow: none;
-        border-top: 1px solid rgba(160, 133, 90, 0.2);
+        border-top: 1px solid rgba(160, 133, 90, 0.15);
         white-space: nowrap;
       }
       .stat-num   { font-size: 1.5rem; }
       .stat-label { font-size: 0.58rem; }
-
-      .hero-badge { display: none; }
     }
   </style>
 </head>
@@ -837,8 +832,10 @@
       <div class="hero-image-bg"></div>
       <div class="hero-image-overlay"></div>
       <div class="hero-shape">
-        <div class="hero-portrait-placeholder">
-          <img class="camila-photo" src="camila.jpg" alt="Camila Díaz — Fundadora de Chic & Calm">
+        <div class="hero-portrait-wrap">
+          <div class="hero-portrait-placeholder">
+            <img class="camila-photo" src="camila.jpg" alt="Camila Díaz — Fundadora de Chic & Calm">
+          </div>
           <div class="hero-name-card">
             <p class="hero-name-card p" style="font-size:0.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze);margin-bottom:.2rem;">Fundadora &amp; Asesora</p>
             <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:500;color:var(--ink);">Camila Díaz</h3>
